@@ -14,7 +14,7 @@ export default function Home() {
               <div className="text-6xl animate-bounce">🔥</div>
             </div>
             <h1 className="text-5xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
-              Streak Tracker
+              Streakz
             </h1>
             <p className="text-gray-600 dark:text-gray-300 text-lg md:text-xl">
               Build your onchain streak on Base • Check in daily to keep it alive

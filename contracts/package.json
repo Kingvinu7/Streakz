@@ -1,7 +1,7 @@
 {
-  "name": "streak-tracker-contracts",
+  "name": "streakz-contracts",
   "version": "1.0.0",
-  "description": "Streak tracking smart contracts for Base chain",
+  "description": "Streakz - Streak tracking smart contracts for Base chain",
   "scripts": {
     "compile": "hardhat compile",
     "test": "hardhat test",

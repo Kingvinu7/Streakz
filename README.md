@@ -1,4 +1,4 @@
-# 🔥 Streak Tracker - Base Chain
+# 🔥 Streakz - Base Chain
 
 An onchain streak tracking platform built on Base (Coinbase L2) that lets users maintain daily check-in streaks.
 

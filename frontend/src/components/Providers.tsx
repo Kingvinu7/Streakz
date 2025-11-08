@@ -18,7 +18,7 @@ const wagmiAdapter = new WagmiAdapter({
   ssr: true,
 })
 
-// Create AppKit instance
+// Create Streakz AppKit instance
 createAppKit({
   adapters: [wagmiAdapter],
   networks: [base, baseSepolia],

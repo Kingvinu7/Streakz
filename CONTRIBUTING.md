@@ -1,6 +1,6 @@
-# Contributing to Streak Tracker
+# Contributing to Streakz
 
-Thank you for your interest in contributing to Streak Tracker! 🎉
+Thank you for your interest in contributing to Streakz! 🎉
 
 ## Development Setup
 
@@ -17,8 +17,8 @@ Thank you for your interest in contributing to Streak Tracker! 🎉
 
 2. **Clone your fork**
 ```bash
-git clone https://github.com/YOUR_USERNAME/streak-tracker.git
-cd streak-tracker
+git clone https://github.com/YOUR_USERNAME/streakz.git
+cd streakz
 ```
 
 3. **Install dependencies**
@@ -223,4 +223,4 @@ By contributing, you agree that your contributions will be licensed under the MI
 
 ---
 
-Thank you for contributing to Streak Tracker! 🔥
+Thank you for contributing to Streakz! 🔥

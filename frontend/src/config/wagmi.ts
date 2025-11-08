@@ -24,8 +24,8 @@ export const wagmiConfig = {
 }
 
 export const metadata = {
-  name: 'Streak Tracker',
+  name: 'Streakz',
   description: 'Track your onchain streaks on Base',
-  url: 'https://streak-tracker.app',
+  url: 'https://streakz.app',
   icons: ['https://avatars.githubusercontent.com/u/179229932']
 }
