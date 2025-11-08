@@ -156,7 +156,7 @@ export function StreakTracker() {
             {streak?.count ? streak.count.toString() : '0'}
           </div>
           <div className="text-gray-600 dark:text-gray-300 text-lg">
-            {streak?.count === 1n ? 'Day' : 'Days'} Streak
+            {streak?.count === BigInt(1) ? 'Day' : 'Days'} Streak
           </div>
         </div>
 
