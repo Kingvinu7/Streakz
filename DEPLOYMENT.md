@@ -18,8 +18,13 @@ cp .env.example .env
 3. Add your private key and API key to `.env`:
 ```env
 PRIVATE_KEY=your_wallet_private_key_here
-BASESCAN_API_KEY=your_basescan_api_key_here
+ETHERSCAN_API_KEY=your_etherscan_api_key_here
 ```
+
+**Getting an Etherscan API Key:**
+- Go to [Etherscan](https://etherscan.io/myapikey) 
+- Create a free account and generate an API key
+- This same key works for BaseScan (Base uses Etherscan's infrastructure)
 
 ### Step 2: Get Testnet ETH
 
