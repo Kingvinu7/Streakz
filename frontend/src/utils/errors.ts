@@ -18,7 +18,7 @@ export function parseWeb3Error(error: any): string {
   }
   
   if (errorString.includes('Insufficient payment')) {
-    return 'Payment amount is too low (minimum 0.0001 ETH)'
+    return 'Payment amount is too low (minimum 0.000005 ETH)'
   }
   
   if (errorString.includes('network changed') || errorString.includes('chain')) {

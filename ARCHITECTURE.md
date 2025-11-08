@@ -58,7 +58,7 @@ struct Streak {
 
 **Constants:**
 - `STREAK_WINDOW`: 24 hours (86400 seconds)
-- `ACTIVATION_FEE`: 0.0001 ETH
+- `ACTIVATION_FEE`: 0.000005 ETH
 
 ### Gas Optimization
 

@@ -90,7 +90,7 @@ export function StreakTracker() {
         address: CONTRACT_ADDRESS as `0x${string}`,
         abi: STREAK_TRACKER_ABI,
         functionName: 'checkIn',
-        value: parseEther('0.0001'),
+        value: parseEther('0.000005'),
       })
     } catch (err) {
       console.error('Check-in error:', err)
@@ -196,8 +196,8 @@ export function StreakTracker() {
             : !canCheckIn()
             ? 'Check back later (1 hour between check-ins)'
             : streak?.isActive
-            ? 'Continue Streak (0.0001 ETH)'
-            : 'Start Streak (0.0001 ETH)'}
+            ? 'Continue Streak (0.000005 ETH)'
+            : 'Start Streak (0.000005 ETH)'}
         </button>
 
         {/* Error Display */}
@@ -229,7 +229,7 @@ export function StreakTracker() {
           </li>
           <li className="flex items-start">
             <span className="mr-2">•</span>
-            <span>Each check-in costs 0.0001 ETH on Base</span>
+            <span>Each check-in costs 0.000005 ETH on Base</span>
           </li>
           <li className="flex items-start">
             <span className="mr-2">•</span>

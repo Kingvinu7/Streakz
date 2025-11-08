@@ -8,7 +8,7 @@ describe("StreakTracker", function () {
   let user1;
   let user2;
   
-  const ACTIVATION_FEE = ethers.parseEther("0.0001");
+  const ACTIVATION_FEE = ethers.parseEther("0.000005");
   const ONE_HOUR = 3600;
   const ONE_DAY = 86400;
 

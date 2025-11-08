@@ -29,7 +29,7 @@ An onchain streak tracking platform built on Base (Coinbase L2) that lets users 
 ## Smart Contract
 
 The `StreakTracker` contract implements:
-- Streak activation with small fee (0.0001 ETH)
+- Streak activation with small fee (0.000005 ETH)
 - 24-hour check-in windows
 - Automatic streak breaking detection
 - Event emissions for tracking
@@ -98,7 +98,7 @@ npm run dev
 ## How It Works
 
 1. **Connect Wallet**: Users connect their wallet using Reown AppKit
-2. **Start Streak**: Click "Start Streak" and pay 0.0001 ETH
+2. **Start Streak**: Click "Start Streak" and pay 0.000005 ETH
 3. **Daily Check-ins**: Return within 24 hours to continue your streak
 4. **Maintain Streak**: Keep checking in daily to grow your streak count!
 

@@ -19,7 +19,7 @@ contract StreakTracker {
     event StreakBroken(address indexed user, uint256 finalCount);
     
     uint256 public constant STREAK_WINDOW = 24 hours;
-    uint256 public constant ACTIVATION_FEE = 0.0001 ether;
+    uint256 public constant ACTIVATION_FEE = 0.000005 ether;
     
     /**
      * @dev Activate or continue a streak
