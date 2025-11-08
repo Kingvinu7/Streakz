@@ -1,4 +1,4 @@
-# 🔥 Streakz - Base Chain
+# 🔥 Streakz - Base
 
 An onchain streak tracking platform built on Base (Coinbase L2) that lets users maintain daily check-in streaks.
 
@@ -7,7 +7,7 @@ An onchain streak tracking platform built on Base (Coinbase L2) that lets users 
 - 🔗 **Wallet Connection**: Seamless wallet integration using Reown AppKit
 - 🔥 **Daily Streaks**: Check in daily to maintain your onchain streak
 - ⏰ **24-Hour Window**: You have 24 hours between check-ins to keep your streak alive
-- 💎 **Base Chain**: Built on Base for fast and cheap transactions
+- 💎 **Base**: Built on Base for fast and cheap transactions
 - ✨ **Beautiful UI**: Modern, responsive interface with real-time updates
 
 ## Project Structure

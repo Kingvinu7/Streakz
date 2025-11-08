@@ -21,7 +21,7 @@
                     └──────┬──────┘
                            │
                     ┌──────▼──────┐
-                    │ Base Chain  │
+                    │    Base     │
                     │  (L2 RPC)   │
                     └──────┬──────┘
                            │
@@ -157,7 +157,7 @@ App
 
 ## Network Architecture
 
-### Base Chain
+### Base
 
 **Mainnet:**
 - Chain ID: 8453
@@ -209,7 +209,7 @@ Developer
     │   ├── Run tests
     │   └── Deploy script
     │
-    └── Base Chain
+    └── Base
         └── Deployed Contract
 ```
 
