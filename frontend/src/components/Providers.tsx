@@ -18,6 +18,15 @@ const wagmiAdapter = new WagmiAdapter({
   ssr: true,
 })
 
+// Debug: Log Project ID status (will show in browser console)
+if (typeof window !== 'undefined') {
+  console.log('🔍 Reown Project ID:', projectId ? '✅ Loaded' : '❌ Missing')
+  console.log('🔍 Analytics enabled:', true)
+  if (!projectId) {
+    console.error('⚠️ CRITICAL: Project ID is not set! Analytics will not work.')
+  }
+}
+
 // Create Streakz AppKit instance
 createAppKit({
   adapters: [wagmiAdapter],
