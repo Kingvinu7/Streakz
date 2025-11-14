@@ -1,10 +1,17 @@
 'use client'
 
+import { useState, useEffect } from 'react'
 import { StreakTracker } from '@/components/StreakTracker'
 import { Providers } from '@/components/Providers'
 import { Footer } from '@/components/Footer'
 
 export default function Home() {
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
+
   return (
     <Providers>
       <main className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
@@ -29,7 +36,7 @@ export default function Home() {
             </div>
           </header>
           
-          <StreakTracker />
+          {mounted && <StreakTracker />}
           
           <Footer />
         </div>

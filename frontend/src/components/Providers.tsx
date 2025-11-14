@@ -1,6 +1,6 @@
 'use client'
 
-import { ReactNode, useEffect, useState } from 'react'
+import { ReactNode } from 'react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { createAppKit } from '@reown/appkit/react'
 import { WagmiProvider } from 'wagmi'
@@ -18,14 +18,8 @@ const wagmiAdapter = new WagmiAdapter({
   ssr: true,
 })
 
-// Initialize AppKit only once
-let appKitInitialized = false
-
-function initializeAppKit() {
-  if (appKitInitialized || typeof window === 'undefined') {
-    return
-  }
-
+// Initialize AppKit at module level but ONLY on client side
+if (typeof window !== 'undefined') {
   // Debug: Log Project ID status (will show in browser console)
   console.log('🔍 Reown Project ID:', projectId ? '✅ Loaded' : '❌ Missing')
   console.log('🔍 Project ID value:', projectId || 'EMPTY STRING')
@@ -52,29 +46,10 @@ function initializeAppKit() {
     }
   })
 
-  appKitInitialized = true
   console.log('✅ AppKit initialized successfully')
 }
 
 export function Providers({ children }: { children: ReactNode }) {
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-    initializeAppKit()
-  }, [])
-
-  // Prevent hydration mismatch by not rendering until mounted
-  if (!mounted) {
-    return (
-      <WagmiProvider config={wagmiAdapter.wagmiConfig}>
-        <QueryClientProvider client={queryClient}>
-          {children}
-        </QueryClientProvider>
-      </WagmiProvider>
-    )
-  }
-
   return (
     <WagmiProvider config={wagmiAdapter.wagmiConfig}>
       <QueryClientProvider client={queryClient}>
